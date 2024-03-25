@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Graham Boyle",
+    "age": 24,
+    "address": {
+      "state": "Lagos",
+      "city": "lekki",
+      "country": "Nigeria"
+    },
+    "isDeveloper": true,
+    "isRich": true,
+    "isMarried": false
+  },
+  {
+    "name": "Richies Boyle",
+    "age": 22,
+    "address": {
+      "state": "Rivers",
+      "city": "Port Harcourt",
+      "country": "Nigeria"
+    },
+    "isDeveloper": false,
+    "isRich": true,
+    "isMarried": false
+  }
+]

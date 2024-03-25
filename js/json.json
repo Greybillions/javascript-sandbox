@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Thinking for a change",
+    "author": "John C. Maxwell",
+    "status": { "own": true, "reading": false, "read": true }
+  },
+  {
+    "title": "Richest Man in Babylon",
+    "author": "Graham Boyle",
+    "status": { "own": true, "reading": false, "read": true }
+  },
+  {
+    "title": "Not Giving a Fuck",
+    "author": "Hillary Abigail",
+    "status": { "own": true, "reading": false, "read": true }
+  }
+]
