@@ -36,5 +36,5 @@ getPersonES6 = (name, age, height) => {
   };
 };
 
-const person = getPersonES6(`Graham`, 24, `6.1ft`);
+const person = getPersonES6(`Graham`, 24, `6.2ft`);
 console.log(person);
