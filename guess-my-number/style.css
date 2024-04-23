@@ -14,8 +14,13 @@ html {
 body {
   font-family: 'Press Start 2P', sans-serif;
   color: #eee;
-  background-color: #222;
-  /* background-color: #60b347; */
+  background: rgb(36, 0, 36);
+  background: linear-gradient(
+    130deg,
+    rgba(36, 0, 36, 1) 0%,
+    rgba(111, 30, 116, 1) 35%,
+    rgba(244, 0, 255, 1) 100%
+  );
 }
 
 /* LAYOUT */
@@ -93,6 +98,7 @@ h1 {
   text-align: center;
   display: block;
   margin-bottom: 3rem;
+  outline: none;
 }
 
 .btn {
@@ -116,4 +122,78 @@ h1 {
 
 .label-score {
   margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 678px) {
+  html {
+    overflow-x: hidden;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn {
+    font-size: 16px;
+    font-family: inherit;
+    padding: 10px 14px;
+    cursor: pointer;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .number {
+    font-size: 5rem;
+  }
+
+  .between {
+    font-size: 16px;
+    top: 20rem;
+    right: 5rem;
+  }
+
+  .number {
+    padding: 1rem;
+  }
+
+  .right {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .guess {
+    font-size: 30px;
+    padding: 20px 15px;
+  }
+
+  .message {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .left {
+    width: 100vw;
+  }
+
+  main {
+    margin-top: 50px;
+    flex-direction: column;
+    height: 0;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .between {
+    top: 52%;
+  }
+  h1 {
+    top: 45%;
+    left: 50%;
+  }
 }
