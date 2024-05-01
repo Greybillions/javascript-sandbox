@@ -66,12 +66,7 @@ document.querySelector('.again').addEventListener('click', () => {
   document.querySelector('.score').textContent = 20;
   secretNumber = Math.trunc(Math.random() * 50) + 1;
   document.querySelector('.number').textContent = '?';
-  document.querySelector('body').style.background = `linear-gradient(
-    130deg,
-    rgba(36, 0, 36, 1) 0%,
-    rgba(111, 30, 116, 1) 35%,
-    rgba(244, 0, 255, 1) 100%
-  )`;
+  document.querySelector('body').style.background = `purple`;
   document.querySelector('.number').style.width = '15rem';
 
   document.querySelector('.guess').value = '';
