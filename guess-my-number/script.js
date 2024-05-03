@@ -18,13 +18,17 @@ document.querySelector('.check').addEventListener('click', () => {
   // when player wins
   else if (Number(guess) === secretNumber) {
     document.querySelector('.message').textContent = '✅ 💃🏽 Correct Number!';
-    highScore = score;
-    document.querySelector('.highscore').textContent = highScore;
+
     document.querySelector('.number').textContent = secretNumber;
 
     //Adding modifications to background when player wins
     document.querySelector('body').style.background = '#60b347';
-    document.querySelector('.number').style.width = '30rem';
+    document.querySelector('.number').style.width = '20rem';
+
+    if (score > highScore) {
+      highScore = score;
+      document.querySelector('.highscore').textContent = highScore;
+    }
   }
 
   //when guess is too high
