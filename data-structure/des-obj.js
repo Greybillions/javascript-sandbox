@@ -34,11 +34,15 @@ function printBookInfo({ title, author, publicationDate = 'Unknown' }) {
   console.log(`${title} by ${author},year ${publicationDate.slice(0, 4)}`);
 }
 
-printBookInfo(books[0]);
-printBookInfo(books[1]);
-printBookInfo(books[2]);
-printBookInfo(books[3]);
-printBookInfo(books[4]);
-printBookInfo(books[5]);
-printBookInfo(books[6]);
-printBookInfo(books[7]);
+for (let i = 0; i < books.length; i++) {
+  printBookInfo(books[i]);
+}
+// printBookInfo(books[1]);
+// printBookInfo(books[2]);
+// printBookInfo(books[3]);
+// printBookInfo(books[4]);
+// printBookInfo(books[5]);
+// printBookInfo(books[6]);
+// printBookInfo(books[7]);
+
+// console.log("let's make pasta");
