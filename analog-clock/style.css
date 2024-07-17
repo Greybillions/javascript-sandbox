@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --primary-color: #f6fbf7;
+  --light-color: #fff;
+  --dark-color: #18191a;
+  --red-color: #e74c3c;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-color);
+}
+
+body.dark {
+  --primary-color: #242526;
+  --light-color: #18191a;
+  --dark-color: #fff;
+  --red-color: #e74c3c;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.container .clock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background: var(--light-color);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1), 0 25px 45px rgba(0, 0, 0, 0.1);
+}
+
+.clock label {
+  position: absolute;
+  inset: 8px;
+  text-align: center;
+  transform: rotate(calc(var(--i) * (360deg / 12)));
+}
+
+.clock label span {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--dark-color);
+  transform: rotate(calc(var(--i) * (-360deg / 12)));
+}
+
+.container .indicator {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.indicator::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: var(--dark-color);
+  border: 4px solid var(--red-color);
+  border-radius: 50%;
+}
+
+.indicator .hand {
+  position: absolute;
+  width: 4px;
+  height: 110px;
+  background: var(--red-color);
+  bottom: 0;
+  border-radius: 25px;
+  transform-origin: bottom;
+}
+
+.hand.minutes {
+  background: var(--dark-color);
+  height: 90px;
+  width: 6px;
+}
+
+.hand.hour {
+  background: var(--dark-color);
+  height: 75px;
+  width: 8px;
+}
+
+.mode-toggle,
+.digital {
+  display: inline-block;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 500;
+  color: var(--light-color);
+  background: var(--dark-color);
+  align-self: center;
+  justify-self: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.mode-toggle:hover {
+  opacity: 0.98;
+  cursor: pointer;
+}
