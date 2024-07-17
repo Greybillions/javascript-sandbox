@@ -123,3 +123,14 @@ body.dark {
   opacity: 0.98;
   cursor: pointer;
 }
+
+.footer {
+  font-size: 20px;
+  color: var(--dark-color);
+  font-weight: 700;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--red-color);
+}

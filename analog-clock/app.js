@@ -7,10 +7,23 @@ const body = document.querySelector('body'),
   digital = document.querySelector('.digital'),
   modeToggle = document.querySelector('.mode-toggle');
 
-//add event listener to mode toggle
+// Function to update the mode toggle text
+const updateModeToggleText = () => {
+  if (body.classList.contains('dark')) {
+    modeToggle.innerHTML = 'Light Mode';
+  } else {
+    modeToggle.innerHTML = 'Dark Mode';
+  }
+};
+
+// Add event listener to mode toggle
 modeToggle.addEventListener('click', () => {
   body.classList.toggle('dark');
+  updateModeToggleText();
 });
+
+// Initial setting of mode toggle text
+updateModeToggleText();
 
 const updateTime = () => {
   //get current time and calculate degrees for clock hands
@@ -18,8 +31,6 @@ const updateTime = () => {
     secondsToDegree = (date.getSeconds() / 60) * 360,
     minutesToDegree = (date.getMinutes() / 60) * 360,
     hourToDegree = (date.getHours() / 12) * 360;
-  // hours = ,
-  // minutes = ;
 
   //rotate clock hands to according to degree based on current time
   secondHand.style.transform = `rotate(${secondsToDegree}deg)`;
