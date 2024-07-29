@@ -24,7 +24,7 @@ const books = [
     programmingLanguage: 'Java',
     onlineContent: true,
     thirdParty: {
-      goodreads: {
+      goodReads: {
         rating: 4.41,
         ratingsCount: 1733,
         reviewsCount: 63,
@@ -58,7 +58,7 @@ const books = [
     programmingLanguage: 'JavaScript',
     onlineContent: false,
     thirdParty: {
-      goodreads: {
+      goodReads: {
         rating: 4.36,
         ratingsCount: 14,
         reviewsCount: 3,
@@ -89,7 +89,7 @@ const books = [
     programmingLanguage: 'C',
     onlineContent: false,
     thirdParty: {
-      goodreads: {
+      goodReads: {
         rating: 4.44,
         ratingsCount: 1010,
         reviewsCount: 57,
@@ -121,7 +121,7 @@ const books = [
     programmingLanguage: 'C, Java',
     onlineContent: false,
     thirdParty: {
-      goodreads: {
+      goodReads: {
         rating: 3.9,
         ratingsCount: 2131,
         reviewsCount: 114,
@@ -144,7 +144,7 @@ const books = [
     programmingLanguage: null,
     onlineContent: true,
     thirdParty: {
-      goodreads: {
+      goodReads: {
         rating: 4.35,
         ratingsCount: 370,
         reviewsCount: 18,
@@ -165,7 +165,7 @@ const books = [
     ISBN: '9781591843528',
     language: 'English',
     thirdParty: {
-      goodreads: {
+      goodReads: {
         rating: 4.11,
         ratingsCount: 40119,
         reviewsCount: 1351,
@@ -192,7 +192,7 @@ const books = [
     ISBN: '9780990582939',
     language: 'English',
     thirdParty: {
-      goodreads: {
+      goodReads: {
         rating: 4.7,
         ratingsCount: 253,
         reviewsCount: 23,
@@ -213,7 +213,7 @@ const books = [
     ISBN: '9781455586691',
     language: 'English',
     thirdParty: {
-      goodreads: {
+      goodReads: {
         rating: 4.19,
         ratingsCount: 144584,
         reviewsCount: 11598,

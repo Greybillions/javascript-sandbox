@@ -24,18 +24,18 @@ console.log(bookAuthor, bookTitle);
 // solution 5
 const {
   thirdParty: {
-    goodreads: { rating: bookRating },
+    goodReads: { rating: bookRating },
   },
 } = books[0];
 console.log(bookRating);
 
 //solution 6
 function printBookInfo({ title, author, publicationDate = 'Unknown' }) {
-  console.log(`${title} by ${author},year ${publicationDate.slice(0, 4)}`);
+  console.log(`${title} by ${author}, ${publicationDate.slice(0, 4)}`);
 }
 
-for (let i = 0; i < books.length; i++) {
-  printBookInfo(books[i]);
+for (let book of books) {
+  printBookInfo(book);
 }
 // printBookInfo(books[1]);
 // printBookInfo(books[2]);
